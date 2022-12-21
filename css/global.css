@@ -89,7 +89,7 @@ ul.sidebar-menu li a:focus {
 }
 
 #sidebar .sub-menu>.sub li {
-    background: #dadada !important;
+    background: #fff !important;
     padding: 2px 10px;
 }
 
