@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keyword" content="">
     <link rel="icon" href="https://foodshahibd.com/foodshahi_ci/assets/admin/favicon/favicon.ico" type="image/x-icon">
-    <title>Customer Reg. | Foodshahi BD</title>
+    <title>Add Employee | Foodshahi BD</title>
 
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
@@ -163,12 +163,13 @@
 
     <!-- Style For Pending Registration Page  -->
     <!-- global style  -->
-    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../employee/css/style.css">
 </head>
 
-<body style="">
+<body>
 
-    <section id="container containerTwo">
+    <section id="container containerTwo" style="height: 100%;">
         <!--header start-->
         <header class="header transparent">
 
@@ -219,7 +220,7 @@
         <!--header end-->
 
         <!--sidebar start-->
-        <aside style="">
+        <aside>
             <div id="sidebar" class="nav-collapse  sidebar_2nd" tabindex="5000" style="overflow: hidden; outline: none; ">
                 <!-- sidebar menu start-->
                 <ul class="sidebar-menu sidebar-menu-2nd transparent" id="nav-accordion" style="padding: 15px 0; box-shadow: none; margin-bottom: 30px;">
@@ -231,13 +232,13 @@
 
                         <ul class="sub" style="display: none;">
                             <li><a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/restaurants">Browse All
-                                (Active)</a></li>
+                  (Active)</a></li>
                             <li><a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/restaurants/index/inactive">Browse
-                                All
-                                (Inactive)</a></li>
+                  All
+                  (Inactive)</a></li>
                             <li><a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/restaurants/free_delivery">Extra
-                                Delivery
-                                Charge</a></li>
+                  Delivery
+                  Charge</a></li>
                             <li><a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/restaurants/featured">Featured</a>
                             </li>
                         </ul>
@@ -327,11 +328,11 @@
                         <ul class="sub" style="display: none;">
                             <li>
                                 <a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/notification">Browse
-                                All</a>
+                  All</a>
                             </li>
                             <li>
                                 <a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/notification/push"> Push
-                                Notification</a>
+                  Notification</a>
                             </li>
                         </ul>
                     </li>
@@ -366,61 +367,61 @@
                     </li>
 
                     <!-- Customer  -->
-                    <li class="sub-menu dcjq-parent-li active">
-                        <a href="javascript:void(0)" class="dcjq-parent active">
+                    <li class="sub-menu dcjq-parent-li">
+                        <a href="javascript:void(0)" class="dcjq-parent">
                             <i class="fa fa-user"></i>
-                            <span class="active text-danger" style="color: #ff6c60 !important;">Customer </span>
+                            <span>Customer </span>
                             <span class="dcjq-icon"></span>
                         </a>
                         <ul class="sub">
                             <!-- Reg. Pending -->
                             <li class="active">
-                                <a href="../index.html" class="active">
-                                    <span class="active text-danger" style="color: #ff6c60 !important;">Reg. Pending </span>
+                                <a href="../index.html">
+                                    <span class="active text-danger">Reg. Pending </span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <!-- Employee  -->
-                    <li class="sub-menu dcjq-parent-li">
-                        <a href="javascript:void(0)" class="dcjq-parent ">
+                    <li class="sub-menu dcjq-parent-li active">
+                        <a href="javascript:void(0)" class="dcjq-parent active">
                             <i class="fa fa-user"></i>
-                            <span class="">Employee </span>
+                            <span class="text-danger">Employee </span>
                             <span class="dcjq-icon"></span>
                         </a>
                         <ul class="sub">
                             <!-- Management -->
                             <li class="sub-menu dcjq-parent-li ">
-                                <a href="javascript:void(0)" class="dcjq-parent active">
+                                <a href="javascript:void(0)" class="dcjq-parent ">
                                     <i class="fa fa-user"></i>
-                                    <span class="">Management</span>
+                                    <span>Management</span>
                                     <span class="dcjq-icon"></span>
                                 </a>
-                                <ul class="sub active" style="display: none;">
-                                    <li class="collapsMenu">
-                                        <a href="./employee/add.html">Add</a>
+                                <ul class="sub" style="display: none;">
+                                    <li class="collapsMenu active text-danger">
+                                        <a href="../employee/add.html">Add</a>
                                     </li>
                                     <li class="collapsMenu">
-                                        <a href="./employee/browseAll.html">Browse All</a>
+                                        <a href="../employee/browseAll.html">Browse All</a>
                                     </li>
                                     <li class="collapsMenu">
-                                        <a href="./employee/category.html">Category</a>
+                                        <a href="../employee/category.html">Category</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <!-- Rider  -->
-                            <li class="sub-menu dcjq-parent-li">
-                                <a href="javascript:void(0)" class="dcjq-parent">
+                            <li class="sub-menu dcjq-parent-li active">
+                                <a href="javascript:void(0)" class="dcjq-parent active">
                                     <i class="fa fa-user"></i>
-                                    <span>Rider</span>
+                                    <span class="text-danger">Rider</span>
                                     <span class="dcjq-icon"></span></a>
-                                <ul class="sub" style="display: none;">
-                                    <li class="collapsMenu">
-                                        <a href="browseAll.html">Browse All</a>
+                                <ul class="sub active" style="display: none;">
+                                    <li class="collapsMenu ">
+                                        <a href="add.html" style="color: #ff6c60 !important;">Add</a>
                                     </li>
-                                    <li class="collapsMenu">
-                                        <a href="add.html">Add</a>
+                                    <li class="collapsMenu active text-danger">
+                                        <a href="browseAll.html">Browse All</a>
                                     </li>
                                     <li class="collapsMenu">
                                         <a href="category.html">Category</a>
@@ -435,7 +436,7 @@
                     <li class="sub-menu dcjq-parent-li">
                         <ul class="sub" style="display: none;">
                             <li><a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/report">Order
-                                Report</a></li>
+                  Report</a></li>
                         </ul>
                     </li>
 
@@ -445,8 +446,8 @@
         </aside>
         <!--sidebar end-->
         <!--main content start-->
-        <section id="main-content">
-            <section class="wrapper" style="height: 100%;">
+        <section id="main-content" style="height: 100%;">
+            <section class="wrapper" style="height: 100% !important;">
                 <!-- page start-->
                 <script src="https://www.jquery-az.com/javascript/alert/dist/alertify.min.js"></script>
                 <link rel="stylesheet" href="https://www.jquery-az.com/javascript/alert/dist/alertify.core.css">
@@ -523,8 +524,8 @@
                                 <div class="card-header" id="headingThree">
                                     <h5 class="mb-0">
                                         <button id="expand_statisticePanel transparent" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Expand statistics
-                                            <span class="glyphicon glyphicon-chevron-down"></span>
-                                        </button>
+                      <span class="glyphicon glyphicon-chevron-down"></span>
+                    </button>
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -605,85 +606,231 @@
 
                         <!-- New design Start from here -->
 
-                        <section class="panel transparent panel_2nd">
-                            <h1>Registration Pending</h1>
+                        <section class=" transparent panel_2nd" id="panel_2nd">
+                            <h1>Add Rider</h1>
                             <hr class="transparent">
-                            <!-- Table  -->
-                            <table class="table transparent table_2nd">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">ID</th>
-                                        <th scope="col">OTP</th>
-                                        <th scope="col">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row"><span style="font-weight: 400;">01728723881<span class="badge bg-important"
-                                                style="font-size: 8px;">5min</span></span>
-                                        </th>
-                                        <td>FS63a019221740e</td>
-                                        <td>FS894545</td>
-                                        <td class="actionCol" style="display: flex; width: 100%;justify-content: space-evenly;">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Done
-                                                </label>
+                            <!-- Form  -->
+                            <div class="form">
+                                <form>
+                                    <!-- Job Title  -->
+                                    <div class="jobTitle">
+                                        <label for="jobTitle">Job Title <span class="text-danger required_sign" style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <select id="riderSalaryType">
+                                            <option value="Fixed">Fixed</option>
+                                            <option value="Commission">Commission</option>
+                                        </select>
+                                    </div>
+
+
+                                    <!-- Rider Type  -->
+                                    <div class="riderType">
+                                        <label for="riderTypeDropdwon">Rider Type<span class="text-danger required_sign" style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <select class="riderTypeDropdwon" id="riderTypeDropdwon">
+                                            <option value="Bike" id="bike">Bike</option>
+                                            <option value="Cycle">Cycle</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Commission Rider  -->
+                                    <div class="commissionRiderForm">
+                                        <!-- Name  -->
+                                        <div class="name">
+                                            <label for="name">Full Name <span class="text-danger required_sign"
+                                            style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                            <input type="text" name="name" id="" placeholder="Full Name" class="">
+                                        </div>
+
+                                        <!-- Photo  -->
+                                        <div class="selfPhoto">
+                                            <label for="selfPhoto">Photo(Passport Size required)<span class="text-danger required_sign"
+                                            style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                            <br>
+                                            <input type="file" name="img" id="">
+                                        </div>
+                                        <!-- Phone  -->
+                                        <div class="phone">
+                                            <label for="phone">Phone No <span class="text-danger required_sign"
+                                            style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                            <input type="text" name="phone" id="" placeholder="Phone No">
+                                        </div>
+                                        <!-- Email  -->
+                                        <div class="email">
+                                            <label for="email">Email</label>
+                                            <input type="mail" name="email" id="" placeholder="Email">
+                                        </div>
+
+                                        <!-- NI Card  -->
+                                        <div class="inCard">
+                                            <label for="inCard">NI Card Number <span class="text-danger required_sign"
+                                            style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                            <input type="text" name="niCard" id="" placeholder="NI Card Number">
+                                        </div>
+
+                                        <!-- Ni Card Photo -->
+                                        <div class="niCardFront">
+                                            <label for="niCardFront">NI Card Front Photo <span class="text-danger required_sign"
+                                            style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                            <input type="file" name="niCardFront" id="" placeholder="NI Card Front Photo">
+                                        </div>
+                                        <!-- Ni Card Back Photo  -->
+                                        <div class="niCardBack">
+                                            <label for="niCardBack">NI Card Back Photo <span class="text-danger required_sign"
+                                            style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                            <input type="file" name="niCardBack" id="" placeholder="NI Card Back Photo">
+                                        </div>
+
+
+                                        <!-- Date Of birth  -->
+                                        <div class="dateOfBirth">
+                                            <label for="dateOfBirth">Date Of Birth <span class="text-danger required_sign"
+                                            style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                            <input type="date" id="birthday" name="birthday">
+                                        </div>
+
+
+                                        <!-- Fixed  -->
+                                        <div id="fixed" style="">
+                                            <div class="salary">
+                                                <label for="salary">Salary<span class="text-danger required_sign"
+                                                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                                <input type="number" name="salary" id="" placeholder="Salary">
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                               Miss
-                                            </label>
+
+                                            <!-- Fixed Grade  -->
+                                            <div class="salaryGrade">
+                                                <label for="salaryGrade">Salary Grade<span class="text-danger required_sign"
+                                                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                                <select>
+                                                    <option value="grad-a">Grade A</option>
+                                                    <option value="grad-b">Grade B</option>
+                                                    <option value="grad-c">Grade C</option>
+                                                </select>
                                             </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><span style="font-weight: 400;">01728723881<span class="badge" style="font-size: 8px;">10min</span></span>
-                                        </th>
-                                        <td>FS63a019221740e</td>
-                                        <td>FS894545</td>
-                                        <td class="actionCol" style="display: flex; width: 100%;justify-content: space-evenly;">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Done
-                                                </label>
+                                        </div>
+                                        <!-- Commission  -->
+                                        <div id="commission">
+                                            <div class="salary" id="commissionCycle">
+                                                <label for="salary">Commission<span class="text-danger required_sign"
+                                                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                                <select>
+                                                    <option value="grad-0">--Select--</option>
+                                                    <option value="grad-a">22</option>
+                                                    <option value="grad-b">25</option>
+                                                    <option value="grad-c">27</option>
+                                                    <option value="grad-d">30</option>
+                                                </select>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                    Miss
-                                                </label>
+                                            <div class="salary" id="commissionBike">
+                                                <label for="salary">Commission<span class="text-danger required_sign"
+                                                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                                <select>
+                                                    <option value="grad-0">--Select--</option>
+                                                    <option value="grad-a">40</option>
+                                                    <option value="grad-b">42</option>
+                                                    <option value="grad-c">45</option>
+                                                    <option value="grad-d">55</option>
+                                                </select>
                                             </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><span style="font-weight: 400;">01728723881<span class="badge"
-                                                    style="font-size: 8px;">20min</span></span>
-                                        </th>
-                                        <td>FS63a019221740e</td>
-                                        <td>FS894545</td>
-                                        <td class="actionCol" style="display: flex; width: 100%;justify-content: space-evenly;">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Done
-                                                </label>
+
+                                            <!-- Commission Grade  -->
+                                            <div class="salaryGrade">
+                                                <label for="salaryGrade">Commission Grade<span class="text-danger required_sign"
+                                                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                                <select>
+                                                    <option value="grad-a">Grade A</option>
+                                                    <option value="grad-b">Grade B</option>
+                                                    <option value="grad-c">Grade C</option>
+                                                </select>
                                             </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                    Miss
-                                                </label>
+                                        </div>
+
+                                        <!-- Duty Time  -->
+                                        <div class="dutyTime">
+                                            <label for="startEndTime">Duty Time <span class="text-danger required_sign"
+                                            style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                            <div class="startEndTime">
+                                                <div class="start">
+                                                    <label for="start_time">Start Time</label>
+                                                    <input type="time" name="start_time" value="" class="form-control">
+                                                </div>
+                                                <div class="end">
+                                                    <label for="end_time">End Time</label>
+                                                    <input type="time" name="end_time" value="" class="form-control">
+                                                </div>
                                             </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <script src="js/main.js"></script>
-                            </table>
+                                        </div>
+
+                                        <!-- Break Time  -->
+                                        <div class="breakTime">
+                                            <label for="breakTime">Break Time</label>
+                                            <div class="breakTimeStartEnd">
+                                                <div class="breakStart">
+                                                    <label for="break_start_time">Break Time Start</label>
+                                                    <input type="time" name="break_start_time" value="" class="form-control">
+                                                </div>
+                                                <div class="breadEnd">
+                                                    <label for="break_end_time">Break End Time</label>
+                                                    <input type="time" name="break_end_time" value="" class="form-control">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Salary Bonus  -->
+                                        <div class="salaryBonus">
+                                            <label for="salaryBonus">Salary Bonus</label>
+                                            <div class="btnInputRadio">
+                                                <div class="yes">
+                                                    <input type="radio" name="btnInputRadio" id="salaryBonusInputYes" onclick="bonusCheckYes()">
+                                                    <label for="yes">Yes</label>
+                                                </div>
+                                                <div class="no">
+                                                    <input type="radio" name="btnInputRadio" id="salaryBonusInputNo" onclick="bonusCheckNo()" checked>
+                                                    <label for="no">No</label>
+                                                </div>
+                                            </div>
+                                            <div id="salaryBonusInput">
+                                                <input type="number" name="salaryBonus" placeholder="Bonus Amount">
+                                                <br><br>
+                                                <input type="text" name="salaryBonus" placeholder="Bonus Purpose">
+                                            </div>
+
+                                        </div>
+
+                                        <!-- Status -->
+                                        <div class="status">
+                                            <label for="activeInactive">Status</label>
+                                            <div class="activeInactive">
+                                                <div class="sutausActive">
+                                                    <input type="radio" name="activeInactive" checked>
+                                                    <label for="activeInactive">Active</label>
+                                                </div>
+                                                <div class="sutausInactive">
+                                                    <input type="radio" name="activeInactive">
+                                                    <label for="activeInactive">Inactive</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Terminate -->
+                                        <div class="status">
+                                            <label for="terminate">Terminate</label>
+                                            <div class="terminateYesNo">
+                                                <div class="terminateYes">
+                                                    <input type="radio" name="terminateYesNo">
+                                                    <label for="terminateYesNo">Yes</label>
+                                                </div>
+                                                <div class="terminateNo">
+                                                    <input type="radio" name="terminateYesNo" checked>
+                                                    <label for="terminateYesNo">No</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <script src="./js/app.js"></script>
+
                         </section>
                     </div>
                 </div>
@@ -875,10 +1022,12 @@
                     </div>
                 </div>
                 <!-- page end-->
+
             </section>
         </section>
         <!--main content end-->
         <!--footer start-->
+
     </section>
     <!--script for fancybox-->
 
@@ -928,6 +1077,12 @@
         </div>
     </div>
     <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/custom.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/custom.js"></script>
+</body>
+
+</html>
 
 
 </body>

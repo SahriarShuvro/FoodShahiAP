@@ -1,0 +1,182 @@
+/* Menu Section  */
+
+.collapsMenu a {
+    font-size: 12px !important;
+    margin-left: 20px;
+    padding: 0 10px !important;
+}
+
+.riderType,
+.jobTitle,
+.name,
+.selfPhoto,
+.phone,
+.email,
+.inCard,
+.niCardFront,
+.niCardBack,
+.dateOfBirth,
+.salary,
+.salaryGrade,
+.salaryBonus,
+.dutyTime,
+.breakTime,
+.status {
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px 10px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+form {
+    padding-bottom: 20px;
+}
+
+form input {
+    width: 100%;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px 0 #3535372b;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: #ffffffc8;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.required_sign {
+    text-shadow: 0px 0px 4px #ffffff;
+    color: red;
+}
+
+.salaryGrade {
+    display: flex;
+    flex-direction: column;
+}
+
+.salaryGrade select,
+.jobTitle select,
+.riderType select,
+.salary select {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ffffff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px 0 #3535372b;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: #ffffffc8;
+}
+
+.btnInputRadio,
+.activeInactive,
+.terminateYesNo,
+.riderTypeRadio {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btnInputRadio div input,
+.activeInactive div input,
+.terminateYesNo div input,
+.riderTypeRadio div input {
+    width: 10px;
+    margin-top: 0px;
+    background: #ffffff00;
+    border: none;
+    box-shadow: none;
+    backdrop-filter: none;
+}
+
+#salaryBonusInput {
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.activeNo {
+    height: 0 !important;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.activeYes {
+    height: 85px !important;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.startEndTime,
+.breakTimeStartEnd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.start,
+.end,
+.breakStart,
+.breadEnd {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    align-items: center;
+}
+
+.start label,
+.end label,
+.breakStart label,
+.breadEnd label {
+    width: 140px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.managementEmplyeeTbl {
+    background-color: #ffffff7a !important;
+    border-radius: 3px;
+}
+
+.managementEmplyeeTbl td,
+.managementEmplyeeTbl th {
+    text-align: center;
+}
+
+.badgeTextSize {
+    font-size: 10px;
+}
+
+.profileDescription {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.profileDescription a {
+    font-weight: bold;
+}
+
+.profileImgSize {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}

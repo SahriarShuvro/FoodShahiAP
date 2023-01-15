@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keyword" content="">
     <link rel="icon" href="https://foodshahibd.com/foodshahi_ci/assets/admin/favicon/favicon.ico" type="image/x-icon">
-    <title>Customer Reg. | Foodshahi BD</title>
+    <title>Browse All | Foodshahi BD</title>
 
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
@@ -163,12 +163,14 @@
 
     <!-- Style For Pending Registration Page  -->
     <!-- global style  -->
-    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../employee/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body style="">
+<body>
 
-    <section id="container containerTwo">
+    <section id="container containerTwo" style="height: 100%;">
         <!--header start-->
         <header class="header transparent">
 
@@ -219,7 +221,7 @@
         <!--header end-->
 
         <!--sidebar start-->
-        <aside style="">
+        <aside>
             <div id="sidebar" class="nav-collapse  sidebar_2nd" tabindex="5000" style="overflow: hidden; outline: none; ">
                 <!-- sidebar menu start-->
                 <ul class="sidebar-menu sidebar-menu-2nd transparent" id="nav-accordion" style="padding: 15px 0; box-shadow: none; margin-bottom: 30px;">
@@ -231,13 +233,13 @@
 
                         <ul class="sub" style="display: none;">
                             <li><a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/restaurants">Browse All
-                                (Active)</a></li>
+                                    (Active)</a></li>
                             <li><a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/restaurants/index/inactive">Browse
-                                All
-                                (Inactive)</a></li>
+                                    All
+                                    (Inactive)</a></li>
                             <li><a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/restaurants/free_delivery">Extra
-                                Delivery
-                                Charge</a></li>
+                                    Delivery
+                                    Charge</a></li>
                             <li><a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/restaurants/featured">Featured</a>
                             </li>
                         </ul>
@@ -327,11 +329,11 @@
                         <ul class="sub" style="display: none;">
                             <li>
                                 <a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/notification">Browse
-                                All</a>
+                                    All</a>
                             </li>
                             <li>
                                 <a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/notification/push"> Push
-                                Notification</a>
+                                    Notification</a>
                             </li>
                         </ul>
                     </li>
@@ -366,45 +368,45 @@
                     </li>
 
                     <!-- Customer  -->
-                    <li class="sub-menu dcjq-parent-li active">
-                        <a href="javascript:void(0)" class="dcjq-parent active">
+                    <li class="sub-menu dcjq-parent-li">
+                        <a href="javascript:void(0)" class="dcjq-parent">
                             <i class="fa fa-user"></i>
-                            <span class="active text-danger" style="color: #ff6c60 !important;">Customer </span>
+                            <span>Customer </span>
                             <span class="dcjq-icon"></span>
                         </a>
                         <ul class="sub">
                             <!-- Reg. Pending -->
                             <li class="active">
-                                <a href="../index.html" class="active">
-                                    <span class="active text-danger" style="color: #ff6c60 !important;">Reg. Pending </span>
+                                <a href="../index.html">
+                                    <span class="active text-danger">Reg. Pending </span>
                                 </a>
                             </li>
                         </ul>
                     </li>
                     <!-- Employee  -->
                     <li class="sub-menu dcjq-parent-li">
-                        <a href="javascript:void(0)" class="dcjq-parent ">
+                        <a href="javascript:void(0)" class="dcjq-parent active">
                             <i class="fa fa-user"></i>
-                            <span class="">Employee </span>
+                            <span class="text-danger">Employee </span>
                             <span class="dcjq-icon"></span>
                         </a>
                         <ul class="sub">
                             <!-- Management -->
-                            <li class="sub-menu dcjq-parent-li ">
+                            <li class="sub-menu dcjq-parent-li active">
                                 <a href="javascript:void(0)" class="dcjq-parent active">
                                     <i class="fa fa-user"></i>
-                                    <span class="">Management</span>
+                                    <span class="text-danger">Management</span>
                                     <span class="dcjq-icon"></span>
                                 </a>
                                 <ul class="sub active" style="display: none;">
-                                    <li class="collapsMenu">
-                                        <a href="./employee/add.html">Add</a>
+                                    <li class="collapsMenu ">
+                                        <a href="add.html">Add</a>
+                                    </li>
+                                    <li class="collapsMenu active text-danger">
+                                        <a href="browseAll.html" style="color: #ff6c60 !important;">Browse All</a>
                                     </li>
                                     <li class="collapsMenu">
-                                        <a href="./employee/browseAll.html">Browse All</a>
-                                    </li>
-                                    <li class="collapsMenu">
-                                        <a href="./employee/category.html">Category</a>
+                                        <a href="category.html">Category</a>
                                     </li>
                                 </ul>
                             </li>
@@ -417,13 +419,13 @@
                                     <span class="dcjq-icon"></span></a>
                                 <ul class="sub" style="display: none;">
                                     <li class="collapsMenu">
-                                        <a href="browseAll.html">Browse All</a>
+                                        <a href="../rider/add.html">Add</a>
                                     </li>
                                     <li class="collapsMenu">
-                                        <a href="add.html">Add</a>
+                                        <a href="../rider/browseAll.html">Browse All</a>
                                     </li>
                                     <li class="collapsMenu">
-                                        <a href="category.html">Category</a>
+                                        <a href="../rider/category.html">Category</a>
                                     </li>
                                 </ul>
                             </li>
@@ -435,7 +437,7 @@
                     <li class="sub-menu dcjq-parent-li">
                         <ul class="sub" style="display: none;">
                             <li><a href="https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/report">Order
-                                Report</a></li>
+                                    Report</a></li>
                         </ul>
                     </li>
 
@@ -445,8 +447,8 @@
         </aside>
         <!--sidebar end-->
         <!--main content start-->
-        <section id="main-content">
-            <section class="wrapper" style="height: 100%;">
+        <section id="main-content" style="height: 100%;">
+            <section class="wrapper" style="height: 100% !important;">
                 <!-- page start-->
                 <script src="https://www.jquery-az.com/javascript/alert/dist/alertify.min.js"></script>
                 <link rel="stylesheet" href="https://www.jquery-az.com/javascript/alert/dist/alertify.core.css">
@@ -605,98 +607,87 @@
 
                         <!-- New design Start from here -->
 
-                        <section class="panel transparent panel_2nd">
-                            <h1>Registration Pending</h1>
+                        <section class=" transparent panel_2nd" id="panel_2nd">
+                            <h1>All Employee <span class="badge badge-pill bg-primary ">Management</span></h1>
                             <hr class="transparent">
                             <!-- Table  -->
-                            <table class="table transparent table_2nd">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Phone</th>
-                                        <th scope="col">ID</th>
-                                        <th scope="col">OTP</th>
-                                        <th scope="col">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row"><span style="font-weight: 400;">01728723881<span class="badge bg-important"
-                                                style="font-size: 8px;">5min</span></span>
-                                        </th>
-                                        <td>FS63a019221740e</td>
-                                        <td>FS894545</td>
-                                        <td class="actionCol" style="display: flex; width: 100%;justify-content: space-evenly;">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Done
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                               Miss
-                                            </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><span style="font-weight: 400;">01728723881<span class="badge" style="font-size: 8px;">10min</span></span>
-                                        </th>
-                                        <td>FS63a019221740e</td>
-                                        <td>FS894545</td>
-                                        <td class="actionCol" style="display: flex; width: 100%;justify-content: space-evenly;">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Done
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                    Miss
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row"><span style="font-weight: 400;">01728723881<span class="badge"
-                                                    style="font-size: 8px;">20min</span></span>
-                                        </th>
-                                        <td>FS63a019221740e</td>
-                                        <td>FS894545</td>
-                                        <td class="actionCol" style="display: flex; width: 100%;justify-content: space-evenly;">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Done
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                    Miss
-                                                </label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                                <script src="js/main.js"></script>
-                            </table>
+                            <div class="table">
+                                <table class="table transparent managementEmplyeeTbl">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">SL</th>
+                                            <th scope="col">Info</th>
+                                            <th scope="col">Salary Grade</th>
+                                            <th scope="col">Duty Time</th>
+                                            <th scope="col">Status</th>
+                                            <th scope="col">Terminate</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <!-- profile  -->
+                                            <td>
+                                                <div>
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkzE6d45XSWslyACW60nU__6F_up6iFdyFLS1eqo&s" alt="Shuvro" class="img-thumbnail img-fluid profileImgSize">
+                                                </div>
+                                                <div class="profileDescription">
+                                                    <a href="#">Shuvro <span class="badge bg-important badgeTextSize">Junior Manager</span></a><br>
+                                                    <a href="tel:01728723881">01728723881</a><br>
+                                                    <a href="mailto:8199shuvro@gmail.com">8199shuvro@gmail.com</a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="salary_grade">
+                                                    <p class="badge">A</p>
+                                                </div>
+                                            </td>
+                                            <td>10:00 AM - 8:00 PM</td>
+                                            <td>
+                                                <p class="badge bg-success">Active</p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <!-- profile  -->
+                                            <td>
+                                                <div>
+                                                    <img src="https://images.ctfassets.net/usf1vwtuqyxm/3SQ3X2km8wkQIsQWa02yOY/8801d7055a3e99dae8e60f54bb4b1db8/HarryPotter_WB_F4_HarryPotterMidshot_Promo_080615_Port.jpg?w=914&q=70&fm=jpg" alt="Ashikuzzaman" class="
+                                                        img-thumbnail img-fluid profileImgSize ">
+                                                </div>
+                                                <div class="profileDescription ">
+                                                    <a href="# ">Ashikuzzaman <span class="badge bg-important badgeTextSize ">Marketing Officer</span></a><br>
+                                                    <a href="tel:01234567891 ">01234567891</a><br>
+                                                    <a href="mailto:ashikuzzaman@gmail.com ">ashikuzzaman@gmail.com</a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="salary_grade">
+                                                    <p class="badge">A</p>
+                                                </div>
+                                            </td>
+                                            <td>9:00 AM - 9:00 PM </td>
+                                            <td>
+                                                <p class="badge bg-important">Inactive</p>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
                         </section>
                     </div>
                 </div>
 
                 <script>
                     function pickup_push(order_id) {
-                        var alertMsg = "Are you sure want to change ready to pickup status?";
+                        var alertMsg = "Are you sure want to change ready to pickup status? ";
 
                         alertify.confirm(alertMsg, function(e) {
                             if (e) {
                                 $.ajax({
-                                    type: "post",
-                                    url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/pickup_push_ajax",
+                                    type: "post ",
+                                    url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/pickup_push_ajax ",
                                     data: {
                                         order_id: order_id
                                     },
@@ -709,62 +700,62 @@
                                     }
                                 })
                             } else {
-                                // alertify.alert("Request cancle");
+                                // alertify.alert("Request cancle ");
                             }
                         });
                     }
 
                     function changeRiderDistancStatusById(product_id, statusRes) {
                         if (statusRes == 'no') {
-                            var alertMsg = "Are you sure want to remove long distance tag?";
+                            var alertMsg = "Are you sure want to remove long distance tag? ";
                         } else {
-                            var alertMsg = "Are you sure want to add long distance tag?";
+                            var alertMsg = "Are you sure want to add long distance tag? ";
                         }
                         alertify.confirm(alertMsg, function(e) {
                             if (e) {
                                 console.log(product_id);
                                 var type = 'rider_distance';
-                                var admin_url = "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/";
+                                var admin_url = "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/ ";
                                 var URL = `${admin_url}orders/changeRiderDistancStatusById/${product_id}/${type}`;
                                 $.get(URL, (data) => {
                                     var status_type = 'danger';
                                     var status = data;
-                                    var a = `<button class="btn btn-link" onclick="changeRiderDistancStatusById(${product_id},'yes')">
-                                                                                                                                                                    <span class="action label label-${status_type}">${status}</span>
+                                    var a = `<button class="btn btn-link " onclick="changeRiderDistancStatusById(${product_id}, 'yes') ">
+                                                                                                                                                                    <span class="action label label-${status_type} ">${status}</span>
                                                                                                                                                                  </button>`;
                                     if (data == 'No') {
                                         $('#res-id-' + product_id).html(a);
-                                        alertify.alert("Changed successfully.");
+                                        alertify.alert("Changed successfully. ");
                                     } else if (data == 'Yes') {
                                         status_type = 'success';
-                                        a = `<button class="btn btn-link" onclick="changeRiderDistancStatusById(${product_id},'no')">
-                                                                                                                                                                    <span class="action label label-${status_type}">${status}</span>
+                                        a = `<button class="btn btn-link " onclick="changeRiderDistancStatusById(${product_id}, 'no') ">
+                                                                                                                                                                    <span class="action label label-${status_type} ">${status}</span>
                                                                                                                                                                  </button>`;
                                         $('#res-id-' + product_id).html(a);
-                                        alertify.alert("Changed successfully.");
+                                        alertify.alert("Changed successfully. ");
                                     } else if (data == 'error') {
-                                        // alert("Something went wrong!")
-                                        // alertify.alert("Something went wrong!");
+                                        // alert("Something went wrong! ")
+                                        // alertify.alert("Something went wrong! ");
                                     } else {
-                                        // alert("Something went wrong!")
-                                        // alertify.alert("Something went wrong!");  
+                                        // alert("Something went wrong! ")
+                                        // alertify.alert("Something went wrong! ");  
                                         // unkonwn error
                                     }
                                 });
                             } else {
-                                // alertify.alert("Request cancle");
+                                // alertify.alert("Request cancle ");
                             }
                         });
                     }
 
                     function updateDeliveryTime(orderId) {
-                        var deliveryTime = document.getElementById("myInput_" + orderId).value;
+                        var deliveryTime = document.getElementById("myInput_ " + orderId).value;
                         alert(deliveryTime)
-                        var r = confirm("Are you want to sure update time?");
+                        var r = confirm("Are you want to sure update time? ");
                         if (r == true) {
                             $.ajax({
-                                type: "post",
-                                url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/updateDeliveryTime",
+                                type: "post ",
+                                url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/updateDeliveryTime ",
                                 data: {
                                     deliveryTime: deliveryTime,
                                     orderId: orderId
@@ -774,14 +765,14 @@
                                 }
                             })
                         } else {
-                            x = "You pressed Cancel!";
+                            x = "You pressed Cancel! ";
                         }
                     }
 
                     function reminder_push(order_id) {
                         $.ajax({
-                            type: "post",
-                            url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/reminder_push_ajax",
+                            type: "post ",
+                            url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/reminder_push_ajax ",
                             data: {
                                 order_id: order_id
                             },
@@ -799,18 +790,18 @@
                 <script>
                     $('#expand_statisticePanel').click(function() {
                         if ($('button span').hasClass('glyphicon-chevron-down')) {
-                            $('#expand_statisticePanel').html('Close statistics <span class="glyphicon glyphicon-chevron-up"></span>');
+                            $('#expand_statisticePanel').html('Close statistics <span class="glyphicon glyphicon-chevron-up "></span>');
                         } else {
-                            $('#expand_statisticePanel').html('Expand statistics <span class="glyphicon glyphicon-chevron-down"></span>');
+                            $('#expand_statisticePanel').html('Expand statistics <span class="glyphicon glyphicon-chevron-down "></span>');
                         }
                     });
 
 
                     function changeSmsStatus(status) {
-                        if (confirm("Are you sure want to " + status + " sending sms after order cancel and confirmed?")) {
+                        if (confirm("Are you sure want to " + status + " sending sms after order cancel and confirmed? ")) {
                             $.ajax({
-                                type: "post",
-                                url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/updateSMSStatus",
+                                type: "post ",
+                                url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/updateSMSStatus ",
                                 data: {
                                     status: status,
                                 },
@@ -832,11 +823,11 @@
                         }
 
                         $('#reportrange').daterangepicker({
-                            "opens": "left",
-                            "applyClass": "btn-info",
-                            "cancelClass": "btn-danger",
-                            "startDate": moment().subtract(29, 'days'),
-                            "endDate": moment(),
+                            "opens ": "left ",
+                            "applyClass ": "btn-info ",
+                            "cancelClass ": "btn-danger ",
+                            "startDate ": moment().subtract(29, 'days'),
+                            "endDate ": moment(),
                             ranges: {
                                 'Today': [moment(), moment()],
                                 'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
@@ -853,55 +844,57 @@
 
                     });
                 </script>
-                <div class="modal fade" id="lg_modal" tabindex="-1" role="dialog" aria-labelledby="">
-                    <div class="modal-dialog modal-lg" role="document">
-                        <div class="modal-content">
-                            <div class="text-center"></div>
+                <div class="modal fade " id="lg_modal " tabindex="-1 " role="dialog " aria-labelledby=" ">
+                    <div class="modal-dialog modal-lg " role="document ">
+                        <div class="modal-content ">
+                            <div class="text-center "></div>
                         </div>
                     </div>
                 </div>
-                <div class="modal fade" id="md_modal" tabindex="-1" role="dialog" aria-labelledby="">
-                    <div class="modal-dialog modal-md" role="document">
-                        <div class="modal-content">
-                            <div class="text-center"></div>
+                <div class="modal fade " id="md_modal " tabindex="-1 " role="dialog " aria-labelledby=" ">
+                    <div class="modal-dialog modal-md " role="document ">
+                        <div class="modal-content ">
+                            <div class="text-center "></div>
                         </div>
                     </div>
                 </div>
-                <div class="modal fade" id="sm_modal" tabindex="-1" role="dialog" aria-labelledby="">
-                    <div class="modal-dialog modal-sm" role="document">
-                        <div class="modal-content">
-                            <div class="text-center"></div>
+                <div class="modal fade " id="sm_modal " tabindex="-1 " role="dialog " aria-labelledby=" ">
+                    <div class="modal-dialog modal-sm " role="document ">
+                        <div class="modal-content ">
+                            <div class="text-center "></div>
                         </div>
                     </div>
                 </div>
                 <!-- page end-->
+
             </section>
         </section>
         <!--main content end-->
         <!--footer start-->
+
     </section>
     <!--script for fancybox-->
 
-    <script type="text/javascript">
+    <script type="text/javascript ">
         // select 2 intigration
-        $(".smart_select").select2();
+        $(".smart_select ").select2();
         $(document).ready(function() {
             // call fancybox
-            $(".fancybox").fancybox();
+            $(".fancybox ").fancybox();
         });
     </script>
 
-    <script type="text/javascript">
+    <script type="text/javascript ">
         $(document).ready(function() {
             $('.my_datepicker').datepicker({
-                dateFormat: "yy-mm-dd"
+                dateFormat: "yy-mm-dd "
             });
         });
     </script>
 
     <script>
         $(function() {
-            $('input[name="search_date"]').daterangepicker({
+            $('input[name="search_date "]').daterangepicker({
                 opens: 'left'
             }, function(start, end, label) {
                 console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
@@ -910,26 +903,26 @@
     </script>
 
     <!--common script for all pages-->
-    <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/common-scripts.js"></script>
-    <div id="ascrail2000" class="nicescroll-rails" style="width: 3px; z-index: auto; background: rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; left: 207px; height: 330px; display: block; opacity: 0;">
-        <div style="position: relative; top: 0px; float: right; width: 3px; height: 201px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px;">
+    <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/common-scripts.js "></script>
+    <div id="ascrail2000 " class="nicescroll-rails " style="width: 3px; z-index: auto; background: rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; left: 207px; height: 330px; display: block; opacity: 0; ">
+        <div style="position: relative; top: 0px; float: right; width: 3px; height: 201px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px; ">
         </div>
     </div>
-    <div id="ascrail2000-hr" class="nicescroll-rails" style="height: 3px; z-index: auto; background: rgb(64, 64, 64); top: 327px; left: 0px; position: fixed; cursor: default; display: none; width: 207px; opacity: 0;">
-        <div style="position: relative; top: 0px; height: 3px; width: 210px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px;">
+    <div id="ascrail2000-hr " class="nicescroll-rails " style="height: 3px; z-index: auto; background: rgb(64, 64, 64); top: 327px; left: 0px; position: fixed; cursor: default; display: none; width: 207px; opacity: 0; ">
+        <div style="position: relative; top: 0px; height: 3px; width: 210px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px; ">
         </div>
     </div>
-    <div id="ascrail2001" class="nicescroll-rails" style="width: 6px; z-index: 1000; background: rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; opacity: 0;">
-        <div style="position: relative; top: 0px; float: right; width: 6px; height: 684px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px;">
+    <div id="ascrail2001 " class="nicescroll-rails " style="width: 6px; z-index: 1000; background: rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; opacity: 0; ">
+        <div style="position: relative; top: 0px; float: right; width: 6px; height: 684px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px; ">
         </div>
     </div>
-    <div id="ascrail2001-hr" class="nicescroll-rails" style="height: 6px; z-index: 1000; background: rgb(64, 64, 64); position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; display: none; opacity: 0;">
-        <div style="position: relative; top: 0px; height: 6px; width: 1707px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px;">
+    <div id="ascrail2001-hr " class="nicescroll-rails " style="height: 6px; z-index: 1000; background: rgb(64, 64, 64); position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; display: none; opacity: 0; ">
+        <div style="position: relative; top: 0px; height: 6px; width: 1707px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px; ">
         </div>
     </div>
-    <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/custom.js"></script>
+    <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/custom.js "></script>
 
-
+    <script src="../js/main.js "></script>
 </body>
 
 </html>

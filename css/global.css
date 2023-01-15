@@ -5,20 +5,30 @@ body {
     color: #000 !important;
 }
 
+.text-danger:hover {
+    color: red !important;
+}
+
+
+/* .containerTwo {
+    background: #000000 !important;
+} */
+
 :root {
     --tr-global-collor: #f8f8f859;
 }
 
 .transparent {
     box-shadow: 0 4px 16px 0 #3535372b;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-    background: #f8f8f8bf !important;
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    background: #ffffff59 !important;
 }
 
-section {
+
+/* section {
     background: #00000017 !important;
-}
+} */
 
 .header {
     position: fixed;
@@ -40,11 +50,13 @@ section {
     border-radius: 5px;
     background: #00000059;
     padding: 10px auto !important;
+    border: 3px solid #ffffff4d;
 }
 
 .panel {
     border: none;
     box-shadow: none;
+    border: 3px solid #ffffff4d;
     background: #ffffff59 !important;
 }
 
@@ -66,8 +78,12 @@ section {
     -webkit-backdrop-filter: blur(15px) !important;
 }
 
+.active {
+    color: #000 !important;
+}
+
 .sidebar-menu-2nd a {
-    color: rgb(0, 0, 0) !important;
+    color: #000000 !important;
 }
 
 #site_logo_container {
@@ -79,17 +95,21 @@ section {
     color: rgba(0, 0, 0, 0.793) !important;
 }
 
+
+/* .sub-menu .active {
+    box-shadow: 0 0 7px 0 rgb(255 255 255 / 87%);
+    backdrop-filter: blur(5px) !important;
+    -webkit-backdrop-filter: blur(5px) !important;
+} */
+
 ul.sidebar-menu li a.active,
 ul.sidebar-menu li a:hover,
 ul.sidebar-menu li a:focus {
-    box-shadow: 0 -1px 6px 0 rgb(53 53 55 / 37%);
-    backdrop-filter: blur(5px) !important;
-    -webkit-backdrop-filter: blur(5px) !important;
-    background: var(--tr-global-collor) !important;
+    background: #ffffff !important;
 }
 
 #sidebar .sub-menu>.sub li {
-    background: #fff !important;
+    background: #ffffff !important;
     padding: 2px 10px;
 }
 
@@ -100,8 +120,22 @@ ul.sidebar-menu li a:focus {
 
 /* Pannel 2nd Style  */
 
+#sidebar .sub-menu>.sub li a {
+    padding: 2px 10px;
+    font-size: 12px !important;
+}
+
 .panel_2nd {
     padding: 20px;
+    border: 3px solid #ffffff4d;
+    border-radius: 5px;
+    height: auto;
+    margin-bottom: 30px;
+    padding-bottom: 20px !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 
 .panel_2nd h1 {
