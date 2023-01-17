@@ -180,3 +180,8 @@ form input {
     object-fit: cover;
     background-repeat: no-repeat;
 }
+
+.fa-toggle-on,
+.fa-toggle-off {
+    cursor: pointer;
+}

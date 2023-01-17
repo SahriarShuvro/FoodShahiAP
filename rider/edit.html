@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keyword" content="">
     <link rel="icon" href="https://foodshahibd.com/foodshahi_ci/assets/admin/favicon/favicon.ico" type="image/x-icon">
-    <title>Browse All | Foodshahi BD</title>
+    <title>"Name" Edit | Foodshahi BD</title>
 
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
@@ -164,7 +164,6 @@
     <!-- Style For Pending Registration Page  -->
     <!-- global style  -->
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../employee/css/style.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -392,40 +391,40 @@
                         </a>
                         <ul class="sub">
                             <!-- Management -->
-                            <li class="sub-menu dcjq-parent-li ">
-                                <a href="javascript:void(0)" class="dcjq-parent ">
-                                    <i class="fa fa-user"></i>
-                                    <span>Management</span>
-                                    <span class="dcjq-icon"></span>
-                                </a>
-                                <ul class="sub" style="display: none;">
-                                    <li class="collapsMenu active text-danger">
-                                        <a href="../employee/add.html">Add</a>
-                                    </li>
-                                    <li class="collapsMenu">
-                                        <a href="../employee/browseAll.html">Browse All</a>
-                                    </li>
-                                    <li class="collapsMenu">
-                                        <a href="../employee/category.html">Category</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <!-- Rider  -->
                             <li class="sub-menu dcjq-parent-li active">
                                 <a href="javascript:void(0)" class="dcjq-parent active">
                                     <i class="fa fa-user"></i>
-                                    <span class="text-danger">Rider</span>
-                                    <span class="dcjq-icon"></span></a>
+                                    <span class="text-danger">Management</span>
+                                    <span class="dcjq-icon"></span>
+                                </a>
                                 <ul class="sub active" style="display: none;">
                                     <li class="collapsMenu ">
                                         <a href="add.html">Add</a>
                                     </li>
                                     <li class="collapsMenu active text-danger">
-                                        <a href="browseAll.html" style="color: #ff6c60 !important;">Browse All</a>
+                                        <a href="browseAll.html">Browse All</a>
                                     </li>
                                     <li class="collapsMenu">
                                         <a href="category.html">Category</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!-- Rider  -->
+                            <li class="sub-menu dcjq-parent-li">
+                                <a href="javascript:void(0)" class="dcjq-parent">
+                                    <i class="fa fa-user"></i>
+                                    <span>Rider</span>
+                                    <span class="dcjq-icon"></span></a>
+                                <ul class="sub active" style="display: none;">
+                                    <li class="collapsMenu ">
+                                        <a href="../rider/add.html">Add</a>
+                                    </li>
+                                    <li class="collapsMenu active text-danger">
+                                        <a href="../rider/browseAll.html">Browse All</a>
+                                    </li>
+                                    <li class="collapsMenu">
+                                        <a href="../rider/category.html">Category</a>
                                     </li>
                                 </ul>
                             </li>
@@ -608,168 +607,186 @@
                         <!-- New design Start from here -->
 
                         <section class=" transparent panel_2nd" id="panel_2nd">
-                            <h1>All Rider </h1>
+                            <h1>"Name" Edit</h1>
                             <hr class="transparent">
-                            <!-- Table  -->
-                            <div class="table">
-                                <table class="table transparent managementEmplyeeTbl">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">SL</th>
-                                            <th scope="col">Info</th>
-                                            <th scope="col">Salary Grade</th>
-                                            <th scope="col">Duty Time</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Terminate</th>
-                                            <th scope="col">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <!-- profile  -->
-                                            <td>
-                                                <div>
-                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkzE6d45XSWslyACW60nU__6F_up6iFdyFLS1eqo&s" alt="Shuvro" class="img-thumbnail img-fluid profileImgSize">
-                                                </div>
-                                                <div class="profileDescription">
-                                                    <a href="#">Shuvro </a><br>
-                                                    <span class="badge bg-success badgeTextSize">Fixed</span> <br>
-                                                    <a href="tel:01728723881">01728723881</a><br>
-                                                    <a href="mailto:8199shuvro@gmail.com">8199shuvro@gmail.com</a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="salary_grade">
-                                                    <p class="badge">A</p><br>
-                                                    <p class="badge bg-warning">Bike</p>
-                                                </div>
-                                            </td>
-                                            <td>10:00 AM - 12:00 PM</td>
-                                            <td>
-                                                <p class="badge bg-success activeRider">Active</p>
-                                                <p class="badge bg-important inactiveRider">Inactive</p>
-                                            </td>
-                                            <td>
-                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;"></i>
-                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()"></i>
-                                            </td>
-                                            <td><a href="edit.html"><i class="fa fa-edit text-info" aria-hidden="true"></i></a></td>
+                            <!-- Form  -->
+                            <div class="form">
+                                <form>
+                                    <!-- Job Title  -->
+                                    <div class="name">
+                                        <label for="name">Job Title <span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <input type="text" name="name" id="" placeholder="Job Title" class="">
+                                    </div>
+                                    <!-- Name  -->
+                                    <div class="name">
+                                        <label for="name">Full Name <span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <input type="text" name="name" id="" placeholder="Full Name" class="">
+                                    </div>
+
+                                    <!-- Photo  -->
+                                    <div class="selfPhoto">
+                                        <label for="selfPhoto">Photo(Passport Size required)<span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <br>
+                                        <input type="file" name="img" id="">
+                                    </div>
+                                    <!-- Phone  -->
+                                    <div class="phone">
+                                        <label for="phone">Phone No <span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <input type="text" name="phone" id="" placeholder="Phone No">
+                                    </div>
+                                    <!-- Email  -->
+                                    <div class="email">
+                                        <label for="email">Email</label>
+                                        <input type="mail" name="email" id="" placeholder="Email">
+                                    </div>
+
+                                    <!-- NI Card  -->
+                                    <div class="inCard">
+                                        <label for="inCard">NI Card Number <span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <input type="text" name="niCard" id="" placeholder="NI Card Number">
+                                    </div>
+
+                                    <!-- Ni Card Photo -->
+                                    <div class="niCardFront">
+                                        <label for="niCardFront">NI Card Front Photo <span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <input type="file" name="niCardFront" id="" placeholder="NI Card Front Photo">
+                                    </div>
+                                    <!-- Ni Card Back Photo  -->
+                                    <div class="niCardBack">
+                                        <label for="niCardBack">NI Card Back Photo <span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <input type="file" name="niCardBack" id="" placeholder="NI Card Back Photo">
+                                    </div>
 
 
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <!-- profile  -->
-                                            <td>
-                                                <div>
-                                                    <img src="https://images.ctfassets.net/usf1vwtuqyxm/3SQ3X2km8wkQIsQWa02yOY/8801d7055a3e99dae8e60f54bb4b1db8/HarryPotter_WB_F4_HarryPotterMidshot_Promo_080615_Port.jpg?w=914&q=70&fm=jpg" alt="Ashikuzzaman" class="
-                                                        img-thumbnail img-fluid profileImgSize ">
-                                                </div>
-                                                <div class="profileDescription ">
-                                                    <a href="# ">Ashikuzzaman</a><br>
-                                                    <p class="badge bg-important badgeTextSize ">Commission</p><br>
-                                                    <a href="tel:01234567891 ">01234567891</a><br>
-                                                    <a href="mailto:ashikuzzaman@gmail.com ">ashikuzzaman@gmail.com</a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="salary_grade">
-                                                    <p class="badge bg-success">B</p><br>
-                                                    <p class="badge bg-info">Cycle</p>
-                                                </div>
-                                            </td>
-                                            <td>9:00 AM - 9:00 PM </td>
-                                            <td>
-                                                <p class="badge bg-success activeRider">Active</p>
-                                                <p class="badge bg-important inactiveRider">Inactive</p>
-                                            </td>
-                                            <td>
-                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;"></i>
-                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()"></i>
-                                            </td>
-                                            <td><a href="edit.html"><i class="fa fa-edit text-info" aria-hidden="true"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <!-- profile  -->
-                                            <td>
-                                                <div>
-                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkzE6d45XSWslyACW60nU__6F_up6iFdyFLS1eqo&s" alt="Shuvro" class="img-thumbnail img-fluid profileImgSize">
-                                                </div>
-                                                <div class="profileDescription">
-                                                    <a href="#">Shuvro </a><br>
-                                                    <span class="badge bg-success badgeTextSize">Fixed</span><br>
-                                                    <a href="tel:01728723881">01728723881</a><br>
-                                                    <a href="mailto:8199shuvro@gmail.com">8199shuvro@gmail.com</a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="salary_grade">
-                                                    <p class="badge bg-primary">C</p><br>
-                                                    <p class="badge bg-warning ">Bike</p>
-                                                </div>
-                                            </td>
-                                            <td>10:00 AM - 8:00 PM</td>
-                                            <td>
-                                                <p class="badge bg-success activeRider">Active</p>
-                                                <p class="badge bg-important inactiveRider">Inactive</p>
-                                            </td>
-                                            <td>
-                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;"></i>
-                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()"></i>
-                                            </td>
-                                            <td><a href="edit.html"><i class="fa fa-edit text-info" aria-hidden="true"></i></a></td>
-                                        </tr>
-                                        <tr class="">
-                                            <th scope="row">2</th>
-                                            <!-- profile  -->
-                                            <td>
-                                                <div>
-                                                    <img src="https://images.ctfassets.net/usf1vwtuqyxm/3SQ3X2km8wkQIsQWa02yOY/8801d7055a3e99dae8e60f54bb4b1db8/HarryPotter_WB_F4_HarryPotterMidshot_Promo_080615_Port.jpg?w=914&q=70&fm=jpg" alt="Ashikuzzaman" class="
-                                                        img-thumbnail img-fluid profileImgSize ">
-                                                </div>
-                                                <div class="profileDescription ">
-                                                    <a href="# ">Ashikuzzaman</a><br>
-                                                    <p class="badge bg-important badgeTextSize ">Commission</p><br>
-                                                    <a href="tel:01234567891 ">01234567891</a><br>
-                                                    <a href="mailto:ashikuzzaman@gmail.com ">ashikuzzaman@gmail.com</a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="salary_grade">
-                                                    <p class="badge bg-success">D</p><br>
-                                                    <p class="badge bg-info">Cycle</p>
-                                                </div>
-                                            </td>
-                                            <td>9:00 AM - 9:00 PM </td>
-                                            <td>
-                                                <p class="badge bg-success activeRider">Active</p>
-                                                <p class="badge bg-important inactiveRider">Inactive</p>
-                                            </td>
-                                            <td>
-                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;"></i>
-                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()"></i>
-                                            </td>
-                                            <td><a href="edit.html"><i class="fa fa-edit text-info"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                    <!-- Date Of birth  -->
+                                    <div class="dateOfBirth">
+                                        <label for="dateOfBirth">Date Of Birth <span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <input type="date" id="birthday" name="birthday">
+                                    </div>
+
+                                    <!-- Salary  -->
+                                    <div class="salary">
+                                        <label for="salary">Salary<span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <input type="number" name="salary" id="" placeholder="Salary">
+                                    </div>
+
+                                    <!-- Salary Grade  -->
+                                    <div class="salaryGrade">
+                                        <label for="salaryGrade">Salary Grade<span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <select>
+                      <option value="grad-a">Grade A</option>
+                      <option value="grad-b">Grade B</option>
+                      <option value="grad-c">Grade C</option>
+                    </select>
+                                    </div>
+
+                                    <!-- Duty Time  -->
+                                    <div class="dutyTime">
+                                        <label for="startEndTime">Duty Time <span class="text-danger required_sign"
+                        style="font-weight: bold !important; font-size: 18px;">*</span></label>
+                                        <div class="startEndTime">
+                                            <div class="start">
+                                                <label for="start_time">Start Time</label>
+                                                <input type="time" name="start_time" value="" class="form-control">
+                                            </div>
+                                            <div class="end">
+                                                <label for="end_time">End Time</label>
+                                                <input type="time" name="end_time" value="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Break Time  -->
+                                    <div class="breakTime">
+                                        <label for="breakTime">Break Time</label>
+                                        <div class="breakTimeStartEnd">
+                                            <div class="breakStart">
+                                                <label for="break_start_time">Break Time Start</label>
+                                                <input type="time" name="break_start_time" value="" class="form-control">
+                                            </div>
+                                            <div class="breadEnd">
+                                                <label for="break_end_time">Break End Time</label>
+                                                <input type="time" name="break_end_time" value="" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Salary Bonus  -->
+                                    <div class="salaryBonus">
+                                        <label for="salaryBonus">Salary Bonus</label>
+                                        <div class="btnInputRadio">
+                                            <div class="yes">
+                                                <input type="radio" name="btnInputRadio" id="salaryBonusInputYes" onclick="bonusCheckYes()">
+                                                <label for="yes">Yes</label>
+                                            </div>
+                                            <div class="no">
+                                                <input type="radio" name="btnInputRadio" id="salaryBonusInputNo" onclick="bonusCheckNo()" checked>
+                                                <label for="no">No</label>
+                                            </div>
+                                        </div>
+                                        <div id="salaryBonusInput">
+                                            <input type="number" name="salaryBonus" placeholder="Bonus Amount">
+                                            <br><br>
+                                            <input type="text" name="salaryBonus" placeholder="Bonus Purpose">
+                                        </div>
+
+                                    </div>
+
+                                    <!-- Status -->
+                                    <div class="status">
+                                        <label for="activeInactive">Status</label>
+                                        <div class="activeInactive">
+                                            <div class="sutausActive">
+                                                <input type="radio" name="activeInactive" checked>
+                                                <label for="activeInactive">Active</label>
+                                            </div>
+                                            <div class="sutausInactive">
+                                                <input type="radio" name="activeInactive">
+                                                <label for="activeInactive">Inactive</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Terminate -->
+                                    <div class="status">
+                                        <label for="terminate">Terminate</label>
+                                        <div class="terminateYesNo">
+                                            <div class="terminateYes">
+                                                <input type="radio" name="terminateYesNo">
+                                                <label for="terminateYesNo">Yes</label>
+                                            </div>
+                                            <div class="terminateNo">
+                                                <input type="radio" name="terminateYesNo" checked>
+                                                <label for="terminateYesNo">No</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <script src="./js/togglebtn.js"></script>
+
                         </section>
                     </div>
                 </div>
 
                 <script>
                     function pickup_push(order_id) {
-                        var alertMsg = "Are you sure want to change ready to pickup status? ";
+                        var alertMsg = "Are you sure want to change ready to pickup status?";
 
                         alertify.confirm(alertMsg, function(e) {
                             if (e) {
                                 $.ajax({
-                                    type: "post ",
-                                    url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/pickup_push_ajax ",
+                                    type: "post",
+                                    url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/pickup_push_ajax",
                                     data: {
                                         order_id: order_id
                                     },
@@ -782,62 +799,62 @@
                                     }
                                 })
                             } else {
-                                // alertify.alert("Request cancle ");
+                                // alertify.alert("Request cancle");
                             }
                         });
                     }
 
                     function changeRiderDistancStatusById(product_id, statusRes) {
                         if (statusRes == 'no') {
-                            var alertMsg = "Are you sure want to remove long distance tag? ";
+                            var alertMsg = "Are you sure want to remove long distance tag?";
                         } else {
-                            var alertMsg = "Are you sure want to add long distance tag? ";
+                            var alertMsg = "Are you sure want to add long distance tag?";
                         }
                         alertify.confirm(alertMsg, function(e) {
                             if (e) {
                                 console.log(product_id);
                                 var type = 'rider_distance';
-                                var admin_url = "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/ ";
+                                var admin_url = "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/";
                                 var URL = `${admin_url}orders/changeRiderDistancStatusById/${product_id}/${type}`;
                                 $.get(URL, (data) => {
                                     var status_type = 'danger';
                                     var status = data;
-                                    var a = `<button class="btn btn-link " onclick="changeRiderDistancStatusById(${product_id}, 'yes') ">
-                                                                                                                                                                    <span class="action label label-${status_type} ">${status}</span>
+                                    var a = `<button class="btn btn-link" onclick="changeRiderDistancStatusById(${product_id},'yes')">
+                                                                                                                                                                    <span class="action label label-${status_type}">${status}</span>
                                                                                                                                                                  </button>`;
                                     if (data == 'No') {
                                         $('#res-id-' + product_id).html(a);
-                                        alertify.alert("Changed successfully. ");
+                                        alertify.alert("Changed successfully.");
                                     } else if (data == 'Yes') {
                                         status_type = 'success';
-                                        a = `<button class="btn btn-link " onclick="changeRiderDistancStatusById(${product_id}, 'no') ">
-                                                                                                                                                                    <span class="action label label-${status_type} ">${status}</span>
+                                        a = `<button class="btn btn-link" onclick="changeRiderDistancStatusById(${product_id},'no')">
+                                                                                                                                                                    <span class="action label label-${status_type}">${status}</span>
                                                                                                                                                                  </button>`;
                                         $('#res-id-' + product_id).html(a);
-                                        alertify.alert("Changed successfully. ");
+                                        alertify.alert("Changed successfully.");
                                     } else if (data == 'error') {
-                                        // alert("Something went wrong! ")
-                                        // alertify.alert("Something went wrong! ");
+                                        // alert("Something went wrong!")
+                                        // alertify.alert("Something went wrong!");
                                     } else {
-                                        // alert("Something went wrong! ")
-                                        // alertify.alert("Something went wrong! ");  
+                                        // alert("Something went wrong!")
+                                        // alertify.alert("Something went wrong!");  
                                         // unkonwn error
                                     }
                                 });
                             } else {
-                                // alertify.alert("Request cancle ");
+                                // alertify.alert("Request cancle");
                             }
                         });
                     }
 
                     function updateDeliveryTime(orderId) {
-                        var deliveryTime = document.getElementById("myInput_ " + orderId).value;
+                        var deliveryTime = document.getElementById("myInput_" + orderId).value;
                         alert(deliveryTime)
-                        var r = confirm("Are you want to sure update time? ");
+                        var r = confirm("Are you want to sure update time?");
                         if (r == true) {
                             $.ajax({
-                                type: "post ",
-                                url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/updateDeliveryTime ",
+                                type: "post",
+                                url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/updateDeliveryTime",
                                 data: {
                                     deliveryTime: deliveryTime,
                                     orderId: orderId
@@ -847,14 +864,14 @@
                                 }
                             })
                         } else {
-                            x = "You pressed Cancel! ";
+                            x = "You pressed Cancel!";
                         }
                     }
 
                     function reminder_push(order_id) {
                         $.ajax({
-                            type: "post ",
-                            url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/reminder_push_ajax ",
+                            type: "post",
+                            url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/reminder_push_ajax",
                             data: {
                                 order_id: order_id
                             },
@@ -872,18 +889,18 @@
                 <script>
                     $('#expand_statisticePanel').click(function() {
                         if ($('button span').hasClass('glyphicon-chevron-down')) {
-                            $('#expand_statisticePanel').html('Close statistics <span class="glyphicon glyphicon-chevron-up "></span>');
+                            $('#expand_statisticePanel').html('Close statistics <span class="glyphicon glyphicon-chevron-up"></span>');
                         } else {
-                            $('#expand_statisticePanel').html('Expand statistics <span class="glyphicon glyphicon-chevron-down "></span>');
+                            $('#expand_statisticePanel').html('Expand statistics <span class="glyphicon glyphicon-chevron-down"></span>');
                         }
                     });
 
 
                     function changeSmsStatus(status) {
-                        if (confirm("Are you sure want to " + status + " sending sms after order cancel and confirmed? ")) {
+                        if (confirm("Are you sure want to " + status + " sending sms after order cancel and confirmed?")) {
                             $.ajax({
-                                type: "post ",
-                                url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/updateSMSStatus ",
+                                type: "post",
+                                url: "https://foodshahibd.com/foodshahi_ci/foodshahiadmin/orders/updateSMSStatus",
                                 data: {
                                     status: status,
                                 },
@@ -905,11 +922,11 @@
                         }
 
                         $('#reportrange').daterangepicker({
-                            "opens ": "left ",
-                            "applyClass ": "btn-info ",
-                            "cancelClass ": "btn-danger ",
-                            "startDate ": moment().subtract(29, 'days'),
-                            "endDate ": moment(),
+                            "opens": "left",
+                            "applyClass": "btn-info",
+                            "cancelClass": "btn-danger",
+                            "startDate": moment().subtract(29, 'days'),
+                            "endDate": moment(),
                             ranges: {
                                 'Today': [moment(), moment()],
                                 'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
@@ -926,24 +943,24 @@
 
                     });
                 </script>
-                <div class="modal fade " id="lg_modal " tabindex="-1 " role="dialog " aria-labelledby=" ">
-                    <div class="modal-dialog modal-lg " role="document ">
-                        <div class="modal-content ">
-                            <div class="text-center "></div>
+                <div class="modal fade" id="lg_modal" tabindex="-1" role="dialog" aria-labelledby="">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="text-center"></div>
                         </div>
                     </div>
                 </div>
-                <div class="modal fade " id="md_modal " tabindex="-1 " role="dialog " aria-labelledby=" ">
-                    <div class="modal-dialog modal-md " role="document ">
-                        <div class="modal-content ">
-                            <div class="text-center "></div>
+                <div class="modal fade" id="md_modal" tabindex="-1" role="dialog" aria-labelledby="">
+                    <div class="modal-dialog modal-md" role="document">
+                        <div class="modal-content">
+                            <div class="text-center"></div>
                         </div>
                     </div>
                 </div>
-                <div class="modal fade " id="sm_modal " tabindex="-1 " role="dialog " aria-labelledby=" ">
-                    <div class="modal-dialog modal-sm " role="document ">
-                        <div class="modal-content ">
-                            <div class="text-center "></div>
+                <div class="modal fade" id="sm_modal" tabindex="-1" role="dialog" aria-labelledby="">
+                    <div class="modal-dialog modal-sm" role="document">
+                        <div class="modal-content">
+                            <div class="text-center"></div>
                         </div>
                     </div>
                 </div>
@@ -957,26 +974,26 @@
     </section>
     <!--script for fancybox-->
 
-    <script type="text/javascript ">
+    <script type="text/javascript">
         // select 2 intigration
-        $(".smart_select ").select2();
+        $(".smart_select").select2();
         $(document).ready(function() {
             // call fancybox
-            $(".fancybox ").fancybox();
+            $(".fancybox").fancybox();
         });
     </script>
 
-    <script type="text/javascript ">
+    <script type="text/javascript">
         $(document).ready(function() {
             $('.my_datepicker').datepicker({
-                dateFormat: "yy-mm-dd "
+                dateFormat: "yy-mm-dd"
             });
         });
     </script>
 
     <script>
         $(function() {
-            $('input[name="search_date "]').daterangepicker({
+            $('input[name="search_date"]').daterangepicker({
                 opens: 'left'
             }, function(start, end, label) {
                 console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
@@ -985,26 +1002,32 @@
     </script>
 
     <!--common script for all pages-->
-    <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/common-scripts.js "></script>
-    <div id="ascrail2000 " class="nicescroll-rails " style="width: 3px; z-index: auto; background: rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; left: 207px; height: 330px; display: block; opacity: 0; ">
-        <div style="position: relative; top: 0px; float: right; width: 3px; height: 201px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px; ">
+    <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/common-scripts.js"></script>
+    <div id="ascrail2000" class="nicescroll-rails" style="width: 3px; z-index: auto; background: rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; left: 207px; height: 330px; display: block; opacity: 0;">
+        <div style="position: relative; top: 0px; float: right; width: 3px; height: 201px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px;">
         </div>
     </div>
-    <div id="ascrail2000-hr " class="nicescroll-rails " style="height: 3px; z-index: auto; background: rgb(64, 64, 64); top: 327px; left: 0px; position: fixed; cursor: default; display: none; width: 207px; opacity: 0; ">
-        <div style="position: relative; top: 0px; height: 3px; width: 210px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px; ">
+    <div id="ascrail2000-hr" class="nicescroll-rails" style="height: 3px; z-index: auto; background: rgb(64, 64, 64); top: 327px; left: 0px; position: fixed; cursor: default; display: none; width: 207px; opacity: 0;">
+        <div style="position: relative; top: 0px; height: 3px; width: 210px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px;">
         </div>
     </div>
-    <div id="ascrail2001 " class="nicescroll-rails " style="width: 6px; z-index: 1000; background: rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; opacity: 0; ">
-        <div style="position: relative; top: 0px; float: right; width: 6px; height: 684px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px; ">
+    <div id="ascrail2001" class="nicescroll-rails" style="width: 6px; z-index: 1000; background: rgb(64, 64, 64); cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; opacity: 0;">
+        <div style="position: relative; top: 0px; float: right; width: 6px; height: 684px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px;">
         </div>
     </div>
-    <div id="ascrail2001-hr " class="nicescroll-rails " style="height: 6px; z-index: 1000; background: rgb(64, 64, 64); position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; display: none; opacity: 0; ">
-        <div style="position: relative; top: 0px; height: 6px; width: 1707px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px; ">
+    <div id="ascrail2001-hr" class="nicescroll-rails" style="height: 6px; z-index: 1000; background: rgb(64, 64, 64); position: fixed; left: 0px; width: 100%; bottom: 0px; cursor: default; display: none; opacity: 0;">
+        <div style="position: relative; top: 0px; height: 6px; width: 1707px; background-color: rgb(232, 64, 63); background-clip: padding-box; border-radius: 10px;">
         </div>
     </div>
-    <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/custom.js "></script>
+    <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/custom.js"></script>
 
-    <script src="../js/main.js "></script>
+    <script src="../js/main.js"></script>
+    <script src="https://foodshahibd.com/foodshahi_ci/assets/admin/js/custom.js"></script>
+</body>
+
+</html>
+
+
 </body>
 
 </html>

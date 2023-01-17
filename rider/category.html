@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="keyword" content="">
     <link rel="icon" href="https://foodshahibd.com/foodshahi_ci/assets/admin/favicon/favicon.ico" type="image/x-icon">
-    <title>Browse All | Foodshahi BD</title>
+    <title>Category | Foodshahi BD</title>
 
     <!-- fontawesome  -->
     <script src="https://kit.fontawesome.com/9674ac7627.js" crossorigin="anonymous"></script>
@@ -166,6 +166,7 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../employee/css/style.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -422,10 +423,10 @@
                                         <a href="add.html">Add</a>
                                     </li>
                                     <li class="collapsMenu active text-danger">
-                                        <a href="browseAll.html" style="color: #ff6c60 !important;">Browse All</a>
+                                        <a href="browseAll.html">Browse All</a>
                                     </li>
-                                    <li class="collapsMenu">
-                                        <a href="category.html">Category</a>
+                                    <li class="collapsMenu ">
+                                        <a href="category.html" style="color: #ff6c60 !important;">Category</a>
                                     </li>
                                 </ul>
                             </li>
@@ -608,157 +609,178 @@
                         <!-- New design Start from here -->
 
                         <section class=" transparent panel_2nd" id="panel_2nd">
-                            <h1>All Rider </h1>
+                            <h1>Category </h1>
                             <hr class="transparent">
-                            <!-- Table  -->
-                            <div class="table">
-                                <table class="table transparent managementEmplyeeTbl">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">SL</th>
-                                            <th scope="col">Info</th>
-                                            <th scope="col">Salary Grade</th>
-                                            <th scope="col">Duty Time</th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Terminate</th>
-                                            <th scope="col">Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <!-- profile  -->
-                                            <td>
-                                                <div>
-                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkzE6d45XSWslyACW60nU__6F_up6iFdyFLS1eqo&s" alt="Shuvro" class="img-thumbnail img-fluid profileImgSize">
-                                                </div>
-                                                <div class="profileDescription">
-                                                    <a href="#">Shuvro </a><br>
-                                                    <span class="badge bg-success badgeTextSize">Fixed</span> <br>
-                                                    <a href="tel:01728723881">01728723881</a><br>
-                                                    <a href="mailto:8199shuvro@gmail.com">8199shuvro@gmail.com</a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="salary_grade">
-                                                    <p class="badge">A</p><br>
-                                                    <p class="badge bg-warning">Bike</p>
-                                                </div>
-                                            </td>
-                                            <td>10:00 AM - 12:00 PM</td>
-                                            <td>
-                                                <p class="badge bg-success activeRider">Active</p>
-                                                <p class="badge bg-important inactiveRider">Inactive</p>
-                                            </td>
-                                            <td>
-                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;"></i>
-                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()"></i>
-                                            </td>
-                                            <td><a href="edit.html"><i class="fa fa-edit text-info" aria-hidden="true"></i></a></td>
+                            <div class="containArea d-flex">
+                                <!-- Category List  -->
+                                <div class="cateroryList transparent">
+                                    <h1>Category List</h1>
+                                    <hr class="transparent">
 
+                                    <div class="">
+                                        <table class="table transparent categoryListTable">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Category</th>
+                                                    <th scope="col">Status</th>
+                                                    <th scope="col">Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Bike</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                    <td><a href="#"><i class="fa fa-edit text-info"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Cycle</td>
+                                                    <td><span class="badge bg-important">Inactive</span></td>
+                                                    <td><a href="#"><i class="fa fa-edit text-info"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Grade A</td>
+                                                    <td>
+                                                        <span class="badge bg-success badgeGrade">Active</span><br>
+                                                        <span class="badge bg-primary badgeGrade">22</span><br>
+                                                        <span class="badge bg-info badgeGrade">Cycle</span>
+                                                    </td>
+                                                    <td><a href="#"><i class="fa fa-edit text-info"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Grade B</td>
+                                                    <td>
+                                                        <span class="badge bg-important badgeGrade">Inactive</span><br>
+                                                        <span class="badge bg-primary badgeGrade">43</span><br>
+                                                        <span class="badge bg-warning badgeGrade">Bike</span>
+                                                    </td>
+                                                    <td><a href="#"><i class="fa fa-edit text-info"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Grade C</td>
+                                                    <td>
+                                                        <span class="badge bg-success badgeGrade">Active</span><br>
+                                                        <span class="badge bg-primary badgeGrade">27</span><br>
+                                                        <span class="badge bg-info badgeGrade">Cycle</span>
+                                                    </td>
+                                                    <td><a href="#"><i class="fa fa-edit text-info"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Grade D</td>
+                                                    <td>
+                                                        <span class="badge bg-important badgeGrade">Inactive</span><br>
+                                                        <span class="badge bg-primary badgeGrade">22</span><br>
+                                                        <span class="badge bg-warning badgeGrade">Bike</span>
+                                                    </td>
+                                                    <td><a href="#"><i class="fa fa-edit text-info"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Fixed</td>
+                                                    <td><span class="badge bg-success">Active</span></td>
+                                                    <td><a href="#"><i class="fa fa-edit text-info"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>Commission</td>
+                                                    <td><span class="badge bg-important">Inactive</span></td>
+                                                    <td><i class="fa fa-edit text-info text-info"></i></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
 
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <!-- profile  -->
-                                            <td>
-                                                <div>
-                                                    <img src="https://images.ctfassets.net/usf1vwtuqyxm/3SQ3X2km8wkQIsQWa02yOY/8801d7055a3e99dae8e60f54bb4b1db8/HarryPotter_WB_F4_HarryPotterMidshot_Promo_080615_Port.jpg?w=914&q=70&fm=jpg" alt="Ashikuzzaman" class="
-                                                        img-thumbnail img-fluid profileImgSize ">
-                                                </div>
-                                                <div class="profileDescription ">
-                                                    <a href="# ">Ashikuzzaman</a><br>
-                                                    <p class="badge bg-important badgeTextSize ">Commission</p><br>
-                                                    <a href="tel:01234567891 ">01234567891</a><br>
-                                                    <a href="mailto:ashikuzzaman@gmail.com ">ashikuzzaman@gmail.com</a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="salary_grade">
-                                                    <p class="badge bg-success">B</p><br>
-                                                    <p class="badge bg-info">Cycle</p>
-                                                </div>
-                                            </td>
-                                            <td>9:00 AM - 9:00 PM </td>
-                                            <td>
-                                                <p class="badge bg-success activeRider">Active</p>
-                                                <p class="badge bg-important inactiveRider">Inactive</p>
-                                            </td>
-                                            <td>
-                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;"></i>
-                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()"></i>
-                                            </td>
-                                            <td><a href="edit.html"><i class="fa fa-edit text-info" aria-hidden="true"></i></a></td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <!-- profile  -->
-                                            <td>
-                                                <div>
-                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkzE6d45XSWslyACW60nU__6F_up6iFdyFLS1eqo&s" alt="Shuvro" class="img-thumbnail img-fluid profileImgSize">
-                                                </div>
-                                                <div class="profileDescription">
-                                                    <a href="#">Shuvro </a><br>
-                                                    <span class="badge bg-success badgeTextSize">Fixed</span><br>
-                                                    <a href="tel:01728723881">01728723881</a><br>
-                                                    <a href="mailto:8199shuvro@gmail.com">8199shuvro@gmail.com</a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="salary_grade">
-                                                    <p class="badge bg-primary">C</p><br>
-                                                    <p class="badge bg-warning ">Bike</p>
-                                                </div>
-                                            </td>
-                                            <td>10:00 AM - 8:00 PM</td>
-                                            <td>
-                                                <p class="badge bg-success activeRider">Active</p>
-                                                <p class="badge bg-important inactiveRider">Inactive</p>
-                                            </td>
-                                            <td>
-                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;"></i>
-                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()"></i>
-                                            </td>
-                                            <td><a href="edit.html"><i class="fa fa-edit text-info" aria-hidden="true"></i></a></td>
-                                        </tr>
-                                        <tr class="">
-                                            <th scope="row">2</th>
-                                            <!-- profile  -->
-                                            <td>
-                                                <div>
-                                                    <img src="https://images.ctfassets.net/usf1vwtuqyxm/3SQ3X2km8wkQIsQWa02yOY/8801d7055a3e99dae8e60f54bb4b1db8/HarryPotter_WB_F4_HarryPotterMidshot_Promo_080615_Port.jpg?w=914&q=70&fm=jpg" alt="Ashikuzzaman" class="
-                                                        img-thumbnail img-fluid profileImgSize ">
-                                                </div>
-                                                <div class="profileDescription ">
-                                                    <a href="# ">Ashikuzzaman</a><br>
-                                                    <p class="badge bg-important badgeTextSize ">Commission</p><br>
-                                                    <a href="tel:01234567891 ">01234567891</a><br>
-                                                    <a href="mailto:ashikuzzaman@gmail.com ">ashikuzzaman@gmail.com</a>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="salary_grade">
-                                                    <p class="badge bg-success">D</p><br>
-                                                    <p class="badge bg-info">Cycle</p>
-                                                </div>
-                                            </td>
-                                            <td>9:00 AM - 9:00 PM </td>
-                                            <td>
-                                                <p class="badge bg-success activeRider">Active</p>
-                                                <p class="badge bg-important inactiveRider">Inactive</p>
-                                            </td>
-                                            <td>
-                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;"></i>
-                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()"></i>
-                                            </td>
-                                            <td><a href="edit.html"><i class="fa fa-edit text-info"></i></a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <!-- Category Add  -->
+                                <div class="cateroryAdd transparent">
+                                    <h1>Add Category</h1>
+                                    <hr class="transparent">
+                                    <!-- Category Name  -->
+                                    <div class="categoryName">
+                                        <label for="c_name">Category Name</label>
+                                        <input type="text" name="c_name" id="" placeholder="Category Name">
+                                    </div>
+
+                                    <!-- Salary Grade  -->
+                                    <div class="salaryGradeForCatagory">
+                                        <label for="salaryGradeForCatagory">Salary Grade</label>
+                                        <div class="radioButtonsForSalaryGrade">
+                                            <div class="categoryYesForSG">
+                                                <input type="radio" name="radioButtonsForSalaryGrade" id="catcheYesButton" style="width: 13px; margin: 0 !important;" onclick="expandSalaryGrade()">
+                                                <label for="radioButtonsForSalaryGrade">Yes</label>
+                                            </div>
+                                            <div class="categoryNoForSG">
+                                                <input type="radio" name="radioButtonsForSalaryGrade" id="catcheNoButton" checked style="width: 13px; margin: 0 !important;" onclick="shrinkSalaryGrade()">
+                                                <label for="radioButtonsForSalaryGrade">No</label>
+                                            </div>
+                                        </div>
+
+                                        <div class="salaryGradeSection" id="expandSalaryGradeSection">
+                                            <div class="gradeName">
+                                                <label for="gradeNameInput">Grade Name</label>
+                                                <input type="text" name="gradeNameInput" id="" placeholder="Grade Name">
+                                            </div>
+                                            <div class="gradeCommission">
+                                                <label for="gradeComInput">Grade Commission</label>
+                                                <input type="number" name="gradeComInput" id="" placeholder="Grade Commission">
+                                            </div>
+                                            <div class="gradeCommissionFor">
+                                                <label for="gradeComForInput">Grade Commission</label>
+                                                <select>
+                                                  <option value="Bike">Bike</option>
+                                                  <option value="Cycle">Cycle</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Status Input  -->
+                                    <div class="categoryActiveInactive">
+                                        <label for="c_name">Status</label>
+                                        <div class="radioButtonsForCategory">
+                                            <div class="categoryYes">
+                                                <input type="radio" name="categoryActiveInactive" id="" checked>
+                                                <label for="categoryActiveInactive">Active</label>
+                                            </div>
+                                            <div class="categoryNo">
+                                                <input type="radio" name="categoryActiveInactive" id="">
+                                                <label for="categoryActiveInactive">Inactive</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="submitButton">
+                                        <button class="btn createButton transparent">Create</button>
+                                    </div>
+                                </div>
                             </div>
-                            <script src="./js/togglebtn.js"></script>
                         </section>
                     </div>
+
+                    <script>
+                        let catcheYesButton = document.getElementById('catcheYesButton');
+                        let catcheNoButton = document.getElementById('catcheNoButton');
+                        let expandSalaryGradeSection = document.getElementById('expandSalaryGradeSection');
+
+                        function expandSalaryGrade() {
+                            if (catcheYesButton.checked == true) {
+                                expandSalaryGradeSection.classList.add('active_s_grade')
+                            }
+                        }
+
+                        function shrinkSalaryGrade() {
+                            if (catcheNoButton.checked == true) {
+                                expandSalaryGradeSection.classList.remove('active_s_grade')
+                            }
+                        }
+                        console.log("Shuvro")
+                    </script>
                 </div>
 
                 <script>

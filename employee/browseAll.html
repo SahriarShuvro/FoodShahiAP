@@ -621,6 +621,7 @@
                                             <th scope="col">Duty Time</th>
                                             <th scope="col">Status</th>
                                             <th scope="col">Terminate</th>
+                                            <th scope="col">Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -629,51 +630,134 @@
                                             <!-- profile  -->
                                             <td>
                                                 <div>
-                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkzE6d45XSWslyACW60nU__6F_up6iFdyFLS1eqo&s" alt="Shuvro" class="img-thumbnail img-fluid profileImgSize">
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkzE6d45XSWslyACW60nU__6F_up6iFdyFLS1eqo&amp;s" alt="Shuvro" class="img-thumbnail img-fluid profileImgSize">
                                                 </div>
                                                 <div class="profileDescription">
-                                                    <a href="#">Shuvro <span class="badge bg-important badgeTextSize">Junior Manager</span></a><br>
+                                                    <a href="#">Shuvro </a><br>
+                                                    <span class="badge bg-success badgeTextSize">Fixed</span> <br>
                                                     <a href="tel:01728723881">01728723881</a><br>
                                                     <a href="mailto:8199shuvro@gmail.com">8199shuvro@gmail.com</a>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="salary_grade">
-                                                    <p class="badge">A</p>
+                                                    <p class="badge">A</p><br>
+                                                    <p class="badge bg-warning">Bike</p>
                                                 </div>
                                             </td>
-                                            <td>10:00 AM - 8:00 PM</td>
+                                            <td>10:00 AM - 12:00 PM</td>
                                             <td>
-                                                <p class="badge bg-success">Active</p>
+                                                <p class="badge bg-success activeRider">Active</p>
+                                                <p class="badge bg-important inactiveRider">Inactive</p>
                                             </td>
+                                            <td>
+                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;" aria-hidden="true"></i>
+                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()" aria-hidden="true"></i>
+                                            </td>
+                                            <td><a href="edit.html"><i class="fa fa-edit text-info" aria-hidden="true"></i></a></td>
+
+
                                         </tr>
                                         <tr>
                                             <th scope="row">2</th>
                                             <!-- profile  -->
                                             <td>
                                                 <div>
-                                                    <img src="https://images.ctfassets.net/usf1vwtuqyxm/3SQ3X2km8wkQIsQWa02yOY/8801d7055a3e99dae8e60f54bb4b1db8/HarryPotter_WB_F4_HarryPotterMidshot_Promo_080615_Port.jpg?w=914&q=70&fm=jpg" alt="Ashikuzzaman" class="
-                                                        img-thumbnail img-fluid profileImgSize ">
+                                                    <img src="https://images.ctfassets.net/usf1vwtuqyxm/3SQ3X2km8wkQIsQWa02yOY/8801d7055a3e99dae8e60f54bb4b1db8/HarryPotter_WB_F4_HarryPotterMidshot_Promo_080615_Port.jpg?w=914&amp;q=70&amp;fm=jpg" alt="Ashikuzzaman" class="
+                                                                                        img-thumbnail img-fluid profileImgSize ">
                                                 </div>
                                                 <div class="profileDescription ">
-                                                    <a href="# ">Ashikuzzaman <span class="badge bg-important badgeTextSize ">Marketing Officer</span></a><br>
+                                                    <a href="# ">Ashikuzzaman</a><br>
+                                                    <p class="badge bg-important badgeTextSize ">Commission</p><br>
                                                     <a href="tel:01234567891 ">01234567891</a><br>
                                                     <a href="mailto:ashikuzzaman@gmail.com ">ashikuzzaman@gmail.com</a>
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="salary_grade">
-                                                    <p class="badge">A</p>
+                                                    <p class="badge bg-success">B</p><br>
+                                                    <p class="badge bg-info">Cycle</p>
                                                 </div>
                                             </td>
                                             <td>9:00 AM - 9:00 PM </td>
                                             <td>
-                                                <p class="badge bg-important">Inactive</p>
+                                                <p class="badge bg-success activeRider">Active</p>
+                                                <p class="badge bg-important inactiveRider">Inactive</p>
                                             </td>
+                                            <td>
+                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;" aria-hidden="true"></i>
+                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()" aria-hidden="true"></i>
+                                            </td>
+                                            <td><a href="edit.html"><i class="fa fa-edit text-info" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <!-- profile  -->
+                                            <td>
+                                                <div>
+                                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrkzE6d45XSWslyACW60nU__6F_up6iFdyFLS1eqo&amp;s" alt="Shuvro" class="img-thumbnail img-fluid profileImgSize">
+                                                </div>
+                                                <div class="profileDescription">
+                                                    <a href="#">Shuvro </a><br>
+                                                    <span class="badge bg-success badgeTextSize">Fixed</span><br>
+                                                    <a href="tel:01728723881">01728723881</a><br>
+                                                    <a href="mailto:8199shuvro@gmail.com">8199shuvro@gmail.com</a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="salary_grade">
+                                                    <p class="badge bg-primary">C</p><br>
+                                                    <p class="badge bg-warning ">Bike</p>
+                                                </div>
+                                            </td>
+                                            <td>10:00 AM - 8:00 PM</td>
+                                            <td>
+                                                <p class="badge bg-success activeRider">Active</p>
+                                                <p class="badge bg-important inactiveRider">Inactive</p>
+                                            </td>
+                                            <td>
+                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;" aria-hidden="true"></i>
+                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()" aria-hidden="true"></i>
+                                            </td>
+                                            <td><a href="edit.html"><i class="fa fa-edit text-info" aria-hidden="true"></i></a></td>
+                                        </tr>
+                                        <tr class="">
+                                            <th scope="row">2</th>
+                                            <!-- profile  -->
+                                            <td>
+                                                <div>
+                                                    <img src="https://images.ctfassets.net/usf1vwtuqyxm/3SQ3X2km8wkQIsQWa02yOY/8801d7055a3e99dae8e60f54bb4b1db8/HarryPotter_WB_F4_HarryPotterMidshot_Promo_080615_Port.jpg?w=914&amp;q=70&amp;fm=jpg" alt="Ashikuzzaman" class="
+                                                                                        img-thumbnail img-fluid profileImgSize ">
+                                                </div>
+                                                <div class="profileDescription ">
+                                                    <a href="# ">Ashikuzzaman</a><br>
+                                                    <p class="badge bg-important badgeTextSize ">Commission</p><br>
+                                                    <a href="tel:01234567891 ">01234567891</a><br>
+                                                    <a href="mailto:ashikuzzaman@gmail.com ">ashikuzzaman@gmail.com</a>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="salary_grade">
+                                                    <p class="badge bg-success">D</p><br>
+                                                    <p class="badge bg-info">Cycle</p>
+                                                </div>
+                                            </td>
+                                            <td>9:00 AM - 9:00 PM </td>
+                                            <td>
+                                                <p class="badge bg-success activeRider">Active</p>
+                                                <p class="badge bg-important inactiveRider">Inactive</p>
+                                            </td>
+                                            <td>
+                                                <i class="fa fa-toggle-on text-danger" id="toggle-on" onclick="toggleOnButton()" style="display: none;" aria-hidden="true"></i>
+                                                <i class="fa fa-toggle-off text-success" id="toggle-off" onclick="toggleOffButton()" aria-hidden="true"></i>
+                                            </td>
+                                            <td><a href="edit.html"><i class="fa fa-edit text-info" aria-hidden="true"></i></a></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+
+                            <script src="../rider/js/togglebtn.js"></script>
 
                         </section>
                     </div>
