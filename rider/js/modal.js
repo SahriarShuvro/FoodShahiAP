@@ -11,8 +11,6 @@
         showPopUp.classList.remove('gradeAddPopUpActive')
     }
 
-    closePopUp.addEventListener('click', closePopUpTab())
-
     // Overlay Funtion
     let overlay = document.getElementById("overlay");
 
@@ -38,7 +36,6 @@
         showPopUp.classList.remove('gradeAddPopUpActive')
     }
 
-    closePopUp.addEventListener('click', closePopUpTab())
 
     // Overlay Funtion
     let overlay = document.getElementById("overlay");
@@ -64,7 +61,6 @@
         showPopUp.classList.remove('gradeAddPopUpActive')
     }
 
-    closePopUp.addEventListener('click', closePopUpTab())
 
     // Overlay Funtion
     let overlay = document.getElementById("overlay");
@@ -81,29 +77,38 @@
 
 // Save Funtion
 
-let saveButtonAdding = document.getElementById('saveButtonAdding');
-let saveButtonAddingEdit = document.getElementById('saveButtonAddingEdit');
+
 
 function adding() {
+    let saveButtonAdding = document.getElementById('adding');
+    let saveingButton = document.getElementById('saveing');
+
     saveButtonAdding.innerText = "Adding...";
-    saveButtonAddingEdit.innerText = "Adding...";
+    saveingButton.innerText = "Saveing...";
 }
 
-function saveAfterAdding() {
-    saveButtonAdding.innerText = "Add";
-    saveButtonAddingEdit.innerText = "Add";
-}
 
-function saveAfterAdded() {
-    saveButtonAdding.innerText = "Added";
-    saveButtonAddingEdit.innerText = "Added";
-}
 
 function btnSave() {
-    setTimeout(off, 2000)
+    function added() {
+        let saveButtonAdding = document.getElementById('adding');
+        let saveingButton = document.getElementById('saveing');
+
+        saveButtonAdding.innerText = "Added";
+        saveingButton.innerText = "Saved";
+    }
+
+    function afterAdding() {
+        let saveButtonAdding = document.getElementById('adding');
+        let saveingButton = document.getElementById('saveing');
+
+        saveButtonAdding.innerText = "Add";
+        saveingButton.innerText = "Save";
+    }
+    setTimeout(added, 1500)
+    setTimeout(afterAdding, 2000)
     setTimeout(closePopUpTab, 2000)
     setTimeout(closePopUpTabEdit, 2000)
-    setTimeout(saveAfterAdding, 2000)
-    setTimeout(saveAfterAdded, 1500)
+    setTimeout(off, 2000)
 
 }
