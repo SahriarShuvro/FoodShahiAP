@@ -121,3 +121,316 @@
     .badgeGrade {
         margin-top: 5px;
     }
+    /* Grades  */
+    
+    .containArea {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .cateroryList {
+        width: 65%;
+    }
+    
+    .cateroryAdd {
+        width: 34%;
+    }
+    
+    .categoryActiveInactive {
+        margin-top: 10px;
+    }
+    
+    .cateroryList,
+    .cateroryAdd {
+        border-radius: 5px;
+        box-shadow: none;
+        border: 3px solid #ffffffa1;
+        padding: 20px;
+        background: #fff0 !important;
+    }
+    
+    .radioButtonsForCategory {
+        display: flex;
+        width: 50%;
+        justify-content: space-between;
+    }
+    
+    .categoryName input,
+    .salaryGradeForCatagory input,
+    .gradeCommissionFor select {
+        border: 3px solid #ffffff;
+        border-radius: 3px;
+        background: #ffffff59;
+        padding: 3px 10px;
+        width: 100%;
+    }
+    
+    .salaryGradeForCatagory {
+        margin-top: 10px;
+    }
+    
+    .gradeCommission {
+        margin-top: 5px;
+    }
+    
+    .salaryGradeSection {
+        font-size: 11px;
+    }
+    
+    .salaryGradeSection {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+    
+    .radioButtonsForSalaryGrade {
+        display: flex;
+        width: 35%;
+        justify-content: space-between;
+    }
+    
+    .gradeCommissionFor {
+        margin-top: 5px;
+    }
+    
+    #expandSalaryGradeSection {
+        height: 0;
+        overflow: hidden;
+        margin: 0;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    
+    .active_s_grade {
+        margin-top: 10px !important;
+        height: 155px !important;
+        transition: 0.3s;
+        -webkit-transition: 0.3s;
+        -moz-transition: 0.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3s;
+    }
+    
+    .createButton {
+        border: 3px solid #fff;
+        padding: 5px 20px;
+        margin-top: 30px;
+        transition: 0.5s;
+        font-weight: bold;
+    }
+    
+    .createButton:hover {
+        box-shadow: none;
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -ms-transition: 0.5s;
+        -o-transition: 0.5s;
+    }
+    /* Category Lis  */
+    
+    .categoryListTable {
+        border-radius: 5px;
+    }
+    
+    .categoryListTable thead tr th,
+    .categoryListTable tbody tr th,
+    .categoryListTable tbody tr td {
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .badgeGrade {
+        margin-top: 5px;
+    }
+    /* grade  */
+    
+    .mainSection {
+        position: relative;
+    }
+    
+    .gradeAddPopUp {
+        width: 0;
+        height: 0;
+        position: fixed;
+        overflow: hidden;
+        background: #fff;
+        z-index: 1030;
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        bottom: 50%;
+        background: #ffffffd1;
+        border-radius: 16px;
+        box-shadow: 0 0 55px #ffffff91;
+        backdrop-filter: blur(3.2px);
+        -webkit-backdrop-filter: blur(7.2px);
+        transition-duration: 300ms;
+    }
+    
+    .gradeAddPopUpActive {
+        width: 50%;
+        height: 80vh;
+        top: 50px;
+        left: 340px;
+        padding: 40px;
+        border: 3px solid #ffffff;
+        transition-duration: 300ms;
+    }
+    
+    .addGrades {
+        margin-bottom: 20px;
+    }
+    
+    .addGradeContain {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .aGradeMainContain {
+        overflow-y: scroll;
+    }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    
+    .aGradeMainContain::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    
+    .aGradeMainContain {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    
+    .addGradeContain input,
+    .addGradeContain select {
+        outline: none !important;
+        border: none;
+        padding: 5px 15px;
+        border-radius: 3px;
+        margin-left: 5px;
+    }
+    
+    .gradeName,
+    .gradeCommission,
+    .gradeFor,
+    .gradeCategory {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .gradeName label,
+    .gradeCommission label,
+    .gradeFor label,
+    .gradeCategory label {
+        width: 25%;
+    }
+    
+    .gradeName input,
+    .gradeCommission input,
+    .gradeFor select,
+    .gradeCategory select {
+        width: 75%;
+    }
+    
+    .gradeFor select {
+        cursor: pointer;
+    }
+    
+    .closeButton,
+    .addGrades {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    #closePopUp,
+    #closePopUpEdit {
+        cursor: pointer;
+        color: #e50000;
+        transition-duration: 300ms;
+    }
+    
+    #closePopUp:hover,
+    #closePopUpEdit:hover {
+        color: #910000;
+        transition-duration: 300ms;
+    }
+    
+    .overlay {
+        position: fixed;
+        width: 0;
+        height: 0;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        right: 50%;
+        bottom: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1020;
+        cursor: pointer;
+        transition-duration: 300ms;
+    }
+    
+    .overlayActive {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        transition-duration: 300ms;
+    }
+    
+    .saveButton button {
+        background: #4681f4;
+        box-shadow: 0px 0px 5px #4681f4a6;
+        border: none;
+        transition-duration: 200ms;
+    }
+    
+    .saveButton {
+        margin-top: 30px;
+    }
+    
+    .saveButton button:hover {
+        box-shadow: none;
+        background: #4681f4;
+        transition-duration: 200ms;
+    }
+    
+    .saveButton button:focus {
+        box-shadow: none;
+        background: #4681f4;
+        transition-duration: 200ms;
+    }
+    
+    .addGrades button {
+        background: #5dbea3;
+        box-shadow: 0px 0px 5px #5dbea2af;
+        border: none;
+        transition-duration: 200ms;
+    }
+    
+    .addGrades button:hover {
+        box-shadow: none;
+        background: #5dbea3;
+        transition-duration: 200ms;
+    }
+    
+    .addGrades button:focus {
+        box-shadow: none;
+        background: #5dbea3;
+        transition-duration: 200ms;
+    }
+    
+    .riderGrades {}
